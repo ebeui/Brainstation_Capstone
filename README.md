@@ -24,7 +24,7 @@ I have organized the following resources for easy access:
 
 - **Data Source**: The original Yelp dataset can be found on [Kaggle](https://www.kaggle.com/yelp-dataset/yelp-dataset).
 
-- **Standup Progress Presentation**: This is a presentation of the [progress](https://github.com/ebeui/Brainstation_Capstone/blob/51ab6321b259b60c1d700d8a83ef8d650ab376ca/DianeLu_Deliverable3_ProgressStandup.pdf) made during the development of the project.
+- **Standup Progress Presentation**: This is a [presentation](https://github.com/ebeui/Brainstation_Capstone/blob/51ab6321b259b60c1d700d8a83ef8d650ab376ca/DianeLu_Deliverable3_ProgressStandup.pdf) of the progress made during development.
 
 ## 📬 Contact
 Thank you for your interest in my restaurant recommendation system project! If you have any questions, or suggestions, or simply want to discuss anything related to the project, please don't hesitate to reach out through this GitHub repository or via email at [dianengalu@gmail.com](mailto:dianengalu@gmail.com). I'm excited to share this project with the community and look forward to receiving valuable feedback.
