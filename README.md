@@ -24,6 +24,8 @@ I have organized the following resources for easy access:
 
 - **Data Source**: The original Yelp dataset can be found on [Kaggle](https://www.kaggle.com/yelp-dataset/yelp-dataset).
 
+- **Data Documentation**: Documentation of the Yelp dataset can be found [here](https://www.yelp.com/dataset/documentation/main).
+
 - **Standup Progress Presentation**: This is a [presentation](https://github.com/ebeui/Brainstation_Capstone/blob/51ab6321b259b60c1d700d8a83ef8d650ab376ca/DianeLu_Deliverable3_ProgressStandup.pdf) of the progress made during development.
 
 ## 📬 Contact
