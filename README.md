@@ -1,3 +1,7 @@
+<p align="right">
+  <img src="https://github.com/ebeui/Brainstation_Capstone/blob/a396883ab5678e627a58a291254fe95b53df29c5/TastyTrail_logo_small.svg" alt="Image Alt Text">
+</p>
+
 # Tasty Trail - Capstone Project
 
 ## Overview
