@@ -1,8 +1,7 @@
+# Tasty Trail - Capstone Project 
 <p align="right">
   <img src="https://github.com/ebeui/Brainstation_Capstone/blob/a396883ab5678e627a58a291254fe95b53df29c5/TastyTrail_logo_small.svg" alt="Image Alt Text">
 </p>
-
-# Tasty Trail - Capstone Project
 
 ## Overview
 Welcome to my capstone project for BrainStation — a user-friendly restaurant recommendation system. The primary goal of this project is to create a data-driven recommendation system that understands each user's preferences and provides personalized restaurant suggestions, leading to delightful dining experiences and increased customer loyalty. The system utilizes user-based collaborative filtering techniques to offer targeted and customized recommendations, which can potentially attract new patrons and benefit restaurant owners.
