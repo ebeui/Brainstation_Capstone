@@ -1,7 +1,7 @@
-# Restaurant Recommendation System - Capstone Project
+# Tasty Trail - Capstone Project
 
 ## Overview
-Welcome to my capstone project for BrainStation—a user-friendly restaurant recommendation system. The primary goal of this project is to create a data-driven recommendation system that understands each user's preferences and provides personalized restaurant suggestions, leading to delightful dining experiences and increased customer loyalty. The system utilizes user-based collaborative filtering techniques to offer targeted and customized recommendations, which can potentially attract new patrons and benefit restaurant owners.
+Welcome to my capstone project for BrainStation — a user-friendly restaurant recommendation system. The primary goal of this project is to create a data-driven recommendation system that understands each user's preferences and provides personalized restaurant suggestions, leading to delightful dining experiences and increased customer loyalty. The system utilizes user-based collaborative filtering techniques to offer targeted and customized recommendations, which can potentially attract new patrons and benefit restaurant owners.
 
 ## 💭 Why a Restaurant Recommendation System?
 In today's fast-paced world, people often rely on online platforms to find places to eat. However, with an overwhelming number of restaurants and diverse individual preferences, finding the perfect dining spot can be challenging. A personalized restaurant recommendation system can revolutionize the way people discover new places to eat. By leveraging data science and machine learning techniques, we can analyze users' past restaurant preferences, ratings, and other relevant information to offer tailored suggestions, saving users time and effort while enhancing their dining experiences.
