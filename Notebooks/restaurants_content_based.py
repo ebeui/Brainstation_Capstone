@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import string
 import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -18,16 +17,14 @@ warnings.filterwarnings("ignore")
 # Load data from a pickle file into a Pandas DataFrame
 rec_data = pd.read_pickle('rec_data.pkl')
 
-st.write(rec_data.head())
-
 # Set up the Streamlit app
 st.title('Restaurant Recommender')
 
-# User input
-restaurant_name = st.text_input("Enter a restaurant name:")
+# User input: Autocomplete dropdown prediction
+restaurant_name_input = st.selectbox("Enter a restaurant name:", rec_data['restaurant_name'])
 
 # Check if the restaurant name is in the dataset
-if restaurant_name in rec_data['restaurant_name'].values:
+if restaurant_name_input in rec_data['restaurant_name'].values:
     # Create a function to calculate recommendations
     def restaurant_recommender(name, restaurants, similarities):
         # Get the restaurant by name
@@ -44,7 +41,7 @@ if restaurant_name in rec_data['restaurant_name'].values:
         top_restaurants = sim_df.sort_values(by='similarity', ascending=False).head(10)
 
         return top_restaurants
-    
+
     # Create the TF-IDF vectorizer
     ENGLISH_STOP_WORDS = stopwords.words('english')
     stemmer = PorterStemmer() 
@@ -74,10 +71,14 @@ if restaurant_name in rec_data['restaurant_name'].values:
     cosine_similarity_matrix = cosine_similarity(tfidf_matrix)
     
     # Calculate recommendations
-    recommendations = restaurant_recommender(restaurant_name, rec_data, cosine_similarity_matrix)
+    recommendations = restaurant_recommender(restaurant_name_input, rec_data, cosine_similarity_matrix).reset_index(drop=True)
+    recommendations.index += 1
 
-    # Display recommendations
+    # Filter out the user's input restaurant from the recommendations
+    recommendations = recommendations[recommendations['restaurant'] != restaurant_name_input]
+
+    # Display recommendations with numbering
     st.write("Top 10 Recommended Restaurants:")
-    st.write(recommendations)
+    st.dataframe(recommendations[['restaurant']].reset_index(drop=True))
 else:
     st.write("Restaurant not found in the dataset.")
